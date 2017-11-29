@@ -1,0 +1,23 @@
+{
+  "name": "dida/http",
+  "description": "The Http Component of Dida Framework",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/zeupin/dida-http",
+  "authors": [
+    {
+      "name": "Macc Liu",
+      "email": "maccliu@zeupin.com",
+      "homepage": "https://github.com/maccliu"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^5.5 || ^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dida\\": "src/Dida"
+    }
+  }
+}
