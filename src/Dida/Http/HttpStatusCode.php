@@ -11,7 +11,7 @@ namespace Dida\Http;
 
 class HttpStatusCode
 {
-    const VERSION = '20171129';
+    const VERSION = '20171206';
 
 
     public static function validate($http_status_code)
@@ -34,5 +34,11 @@ class HttpStatusCode
         } else {
             return false;
         }
+    }
+
+
+    public static function send($response_code)
+    {
+        http_response_code($response_code);
     }
 }
