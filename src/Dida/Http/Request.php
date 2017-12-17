@@ -179,23 +179,23 @@ class Request
     }
 
 
-    public static function post($index = null)
+    public static function post($name = null)
     {
-        if (is_null($index)) {
+        if (is_null($name)) {
             return self::$post;
         }
 
-        return self::arrayValue($index, self::$post);
+        return self::arrayValue($name, self::$post);
     }
 
 
-    public static function get($index = null)
+    public static function get($name = null)
     {
-        if (is_null($index)) {
+        if (is_null($name)) {
             return self::$get;
         }
 
-        return self::arrayValue($index, self::$get);
+        return self::arrayValue($name, self::$get);
     }
 
 
